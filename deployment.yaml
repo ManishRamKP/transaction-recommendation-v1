@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finflow-tradereco
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: finflow-tradereco
+  template:
+    metadata:
+      labels:
+        app: finflow-tradereco
+    spec:
+      containers:
+        - name: back-end
+          image: YOUR_AWS_ACCOUNT_ID.dkr.ecr.YOUR_REGION.amazonaws.com/trade-recommendation:latest
+          ports:
+            - containerPort: 8112

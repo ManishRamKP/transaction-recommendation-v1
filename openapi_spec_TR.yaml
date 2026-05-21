@@ -1,0 +1,86 @@
+openapi: 3.0.0
+info:
+  title: Invoice Analysis API
+  version: 1.0.0
+  description: API for analyzing invoice data and providing assessments.
+
+paths:
+  /transaction-recommendation:
+    post:
+      summary: Analyze Invoice Data
+      description: Receives invoice data and returns an analysis with cumulative trade scores and assessments.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InputData'
+      responses:
+        '200':
+          description: Successful response with analysis data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OutputData'
+        '400':
+          description: Bad request when the input data is invalid.
+
+components:
+  schemas:
+    InputData:
+      type: array
+      items:
+        type: object
+        properties:
+          total_amount:
+            type: integer
+            example: 10000
+          borrower_gst:
+            type: string
+            example: "37AAMCS2557B1ZB"
+
+    OutputData:
+      type: array
+      items:
+        type: object
+        properties:
+          cumulative_trade_score:
+            type: number
+            format: float
+            example: 50.23
+          request_id:
+            type: string
+            example: "c09a817b-d6ca-4338-925e-7bb628e5accf"
+          timestamp:
+            type: string
+            format: date-time
+            example: "2023-12-18T11:01:07"
+          total_amount_requested:
+            type: integer
+            example: 10000
+          total_invoice_amount:
+            type: integer
+            example: 9800
+          invoice_id:
+            type: integer
+            example: 123
+          invoice_amount:
+            type: integer
+            example: 4000
+          assessment:
+            type: object
+            properties:
+              credit_score:
+                type: number
+                format: float
+                example: 50.23
+              highlights:
+                type: array
+                items:
+                  type: string
+              observations:
+                type: array
+                items:
+                  type: string
+              final_verdict:
+                type: string

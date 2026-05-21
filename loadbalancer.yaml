@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: finflow-tradereco-service-loadbalancer
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-connection-idle-timeout: "600"
+spec:
+  type: LoadBalancer
+  selector:
+    app: finflow-tradereco
+  ports:
+    - protocol: TCP
+      port: 8112
+      targetPort: 8112

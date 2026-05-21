@@ -1,0 +1,87 @@
+{
+    "input": [
+      {
+        "total_amount": 10000,
+        "borrower_gst": "37AAMCS2557B1ZB"
+      }
+    ],
+    "output": [
+      {
+        "cumulative_assessment": {
+                "cumulative_trade_score": 45.49,
+                "request_id": "b517c131-9e54-480e-818b-4b38fe43ad6a",
+                "timestamp": "2023-12-25 09:05:42",
+                "total_amount_requested": 100000,
+                "total_invoice_amount": 99049
+            },
+        "individual_assessment": [
+
+            {
+                "assessment": {
+                    "base_score":54.0,
+                    "credit_score": 54.0,
+                    "final_verdict": "This transaction appears strongly favorable. Overall, the indicators suggest a good potential for financing.",
+                    "highlights": [
+                        "The transaction size aligns favorably with our expectations based on historical trends.",
+                        "The borrower showcases commendable financial discipline and compliance.",
+                        "The trader involved has a commendable track record of financial responsibility.",
+                        "Recent transaction activities suggest a growth trajectory or a significant business engagement.",
+                        "The company's operational history signifies market experience and stability."
+                    ],
+                    "observations": [
+                        "Infrequent transactions may suggest sporadic or inconsistent business dealings."
+                    ],
+                    "request_id": "b517c131-9e54-480e-818b-4b38fe43ad6a",
+                    "timestamp": "2023-12-25 09:05:42"
+                },
+                "invoice_amount": 1397,
+                "invoice_id": "PT-2825-2023-24"
+            },
+            {
+                "assessment": {
+                    "base_score":47.1781617662527,
+                    "credit_score": 47.1781617662527,
+                    "final_verdict": "This transaction appears strongly favorable. Overall, the indicators suggest a good potential for financing.",
+                    "highlights": [
+                        "The transaction size aligns favorably with our expectations based on historical trends.",
+                        "The borrower showcases commendable financial discipline and compliance.",
+                        "The trader involved has a commendable track record of financial responsibility.",
+                        "Recent transaction activities suggest a growth trajectory or a significant business engagement.",
+                        "The company's operational history signifies market experience and stability."
+                    ],
+                    "observations": [
+                        "Infrequent transactions may suggest sporadic or inconsistent business dealings."
+                    ],
+                    "request_id": "b517c131-9e54-480e-818b-4b38fe43ad6a",
+                    "timestamp": "2023-12-25 09:05:42"
+                },
+                "invoice_amount": 1218,
+                "invoice_id": "PT-2882-2023-24"
+            },
+            { 
+                "assessment": {
+                    "base_score":40.80388101482099,
+                    "credit_score": 40.80388101482099,
+                    "final_verdict": "This transaction appears strongly favorable. Overall, the indicators suggest a good potential for financing.",
+                    "highlights": [
+                        "The transaction size aligns favorably with our expectations based on historical trends.",
+                        "The borrower showcases commendable financial discipline and compliance.",
+                        "The trader involved has a commendable track record of financial responsibility.",
+                        "Recent transaction activities suggest a growth trajectory or a significant business engagement.",
+                        "The company's operational history signifies market experience and stability."
+                    ],
+                    "observations": [
+                        "Infrequent transactions may suggest sporadic or inconsistent business dealings."
+                    ],
+                    "request_id": "b517c131-9e54-480e-818b-4b38fe43ad6a",
+                    "timestamp": "2023-12-25 09:05:42"
+                },
+                "invoice_amount": 96434,
+                "invoice_id": "PT-1656-7408-5838-24"
+            }
+        ]
+        
+      }
+    ]
+  }
+  
